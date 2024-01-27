@@ -9,7 +9,7 @@ import { UserAnswerModule } from './user-answers/user-answers.module';
 
 @Module({
   imports: 
-    [MongooseModule.forRoot('mongodb://127.0.0.1:27017/valentine'),  UsersModule, UserQuestionsModule, UserAnswerModule],
+    [MongooseModule.forRoot('mongodb+srv://VantaVerseSakthiSvsp:WfeDMZ$CYkThZm2@vantaverselovegame.cjjckqh.mongodb.net/valentine'),  UsersModule, UserQuestionsModule, UserAnswerModule],
   controllers: [AppController],
   providers: [AppService],
 })
