@@ -7,8 +7,8 @@ import { User } from './users.model';
 export class UserService {
     constructor(@InjectModel(User.name) private readonly userModel: Model<User>) {}
 
-    async getAllUsers(): Promise<User[]> {
-        return this.userModel.find().exec();
+    async getAllUsers(): Promise<any> {
+        return "all users here"
     }
 
     async getUserById(id: string): Promise<User> {
