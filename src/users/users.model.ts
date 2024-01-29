@@ -10,8 +10,7 @@ export class User extends Document {
     age: number;
 
     @Prop({ required: true })
-    gender: number;
-
+    gender: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

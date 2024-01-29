@@ -17,6 +17,9 @@ export class UserQuestions extends Document {
 
     @Prop()
     booleanAnswer?: boolean;
+    
+    @Prop({ required: true }) 
+    gender: string;
 }
 
 export const UserQuestionsSchema = SchemaFactory.createForClass(UserQuestions);

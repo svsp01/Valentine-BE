@@ -6,11 +6,12 @@ import { User, UserSchema } from './users.model';
 import { UserQuestions, UserQuestionsSchema } from '../user-questions/user-questions.model';
 import { UserQuestionsController } from '../user-questions/user-questions.controller';
 import { UserQuestionsService } from '../user-questions/user-question.service';
+import {LoveLanguageCardService} from "../users/love-language-card.service"
 
 
 @Module({
     imports: [MongooseModule.forFeature([{ name: User.name, schema: UserSchema }, { name: UserQuestions.name, schema: UserQuestionsSchema }])],
     controllers: [UserController, UserQuestionsController],
-    providers: [UserService, UserQuestionsService],
+    providers: [UserService, UserQuestionsService, LoveLanguageCardService],
 })
 export class UsersModule {}
